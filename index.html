@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>Exams Snippet</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+	     <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="w34.css">
+    <script src="jquery.min.js"></script>
+    <script src="scrit.js"></script>
+  </head>
+<body>
+<div class="w3-card w3-bar w3-black w3-hide-small">
+						<a href="#" class="w3-bar-item w3-button">&nbsp;Simple Quiz App &nbsp;</a>
+						<br style="font-size: 40px">
+			</div>
+			<div class="w3-card w3-bar w3-black w3-hide-medium w3-hide-large">
+					<button  id="bttn" class="w3-button w3-right w3-bar-item w3-black w3-xlarge" onclick=menu()></button>
+					<button  id="btn" class="w3-button w3-right w3-bar-item w3-black w3-xlarge w3-hide" onclick=off()>x</button>
+					<div id="menu" class="w3-hide w3-hide-medium w3-hide-large">
+						<h5><a href="#" class="w3-bar-item w3-left w3-button"><i class="fa fa-home"><br>Home</i></a></h5>
+						<h5><a href="#" class="w3-bar-item w3-left w3-button"><i class="fa fa-user"><br>User</i></a></h5>
+						<h5><a href="#" class="w3-bar-item w3-left w3-button"><i class="fa fa-archive"><br>Archive</i></a></h5>
+						<h5><a href="#" class="w3-bar-item w3-left w3-button"><i class="fa fa-phone"><br>Contact</i></a></h5>
+					</div>
+					  <h4 class="w3-left" id="brand"> &nbsp;Simple Quiz App &nbsp;</h4>
+
+				</div>
+				<br>
+			<br>
+		<div class="w3-container" style="margin-bottom: 100px;">
+
+    <div class="w3-card w3-row-padding w3-white quizContainer"><br><br>
+      <div class="question w3-center"><h2></h2></div>
+
+        <ul class="choiceList"></ul>
+
+
+        <div class="w3-display-container quizMessage w3-card w3-red w3-center"><span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>")
+        	</div><br><br>
+         
+         <div id="id01" class="w3-modal">
+         <div class="w3-modal-content  w3-animate-zoom w3-card">
+         <header class="w3-container w3-indigo">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3>Results</h3>
+  </header>
+<div class="w3-container resultat">
+<p class="results w3-center"></p>
+      </div>
+      <footer class="w3-container w3-center w3-indigo">
+      	<br>
+      	<br>
+      	<div class="nextButton w3-button w3-teal" onclick="document.getElementById('id01').style.display='none'">Play Again?</div>
+      		<br>
+      		<br>
+      </footer>
+         </div>
+ </div>
+      <div class="w3-container w3-center">
+      <div class="nextButton w3-button w3-green ">Next Question</div>
+       </div>
+        <br>
+      <br>
+
+            </div>
+            </div>
+
+
+</body>
+</html>
+
+
+
